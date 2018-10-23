@@ -1,0 +1,84 @@
+[{
+    "id":"#1",
+    "imageUrl":"assets/img/alexandre-debieve-561298-unsplash.jpg",
+    "caption":"Wire & Cable & Harness Assembly Products",
+    "Product":[{"title":"Wire & Cable","list":["M17/RG Cables","M16878","M22759","M25038","M27500","M81044"]},
+               {"title":"Tools","list":["M15570","M22520","M81969","MS242256","MS27495"]},
+               {"title":"Harness Management Products","list":["AA-52080>AA-52084","M83519 and M81824","Mil-T-43435"]},
+               {"title":"Hardware","list":["MS21382 > MS21387","MS25165 > MS25170","MS91524 and MS91525","MS91528 and NAS1553"]},
+               {"title":"Terminals,Jumper & Terminal block","list":["M7928","M83413","MS20659","MS25036","MS25274","MS27212","MS25226","MS18029","MS25083"]}
+
+            ]
+
+},
+{   
+    "id":"#2",
+    "imageUrl":"assets/img/alexandre-debieve-561298-unsplash.jpg",
+    "caption":"Tubing",
+    "Product":[{"title":"Heat-shrink Tubing","list":["Single-Wall","Dual-Wall","Heavy-Duty","Fabric","Medical"]},
+    {"title":"Non-shrink Tubing","list":["onduit Tubing","Spiral Binding","PVC Tubing","Silicone Tubing","Neoprene Tubing","PTFE Tubing"]},
+    {"title":"Braided Sleeving","list":["Electrical","Mechanical","Thermal","EMI","Fire-resistant","Acoustic"]}]
+
+},
+{   
+    "id":"#3",
+    "imageUrl": "assets/img/alexandre-debieve-561298-unsplash.jpg",
+    "caption":"Connectors/Backshell",
+    "Product":[{"title":"Single Wire","list":["Equipment wire","Aerospace wire","Space wire","Automotive Wire","Mil-Marine wire","Rail Wire"]},
+               {"title":"Twisted Wire","list":["Twisted Pair","Twisted Triple","Twisted Quad & Above"]},
+               {"title":"Multicore Cable","list":["Shield & Jacket","Shield - No Jacket","Jacket - No Shield"]}
+            ]
+
+
+},
+{   
+    "id":"#4",
+    "imageUrl":"assets/img/alexandre-debieve-561298-unsplash.jpg",
+    "caption":"Switches & Relays",
+    "Product":[{"title":"Heat-shrink Tubing","list":["Single-Wall","Dual-Wall","Heavy-Duty","Fabric","Medical"]},
+    {"title":"Non-shrink Tubing","list":["onduit Tubing","Spiral Binding","PVC Tubing","Silicone Tubing","Neoprene Tubing","PTFE Tubing"]},
+    {"title":"Braided Sleeving","list":["Electrical","Mechanical","Thermal","EMI","Fire-resistant","Acoustic"]}]
+
+
+},
+{
+    "id":"#5",
+    "imageUrl":"assets/img/alexandre-debieve-561298-unsplash.jpg",
+    "caption":"Assemblies",
+    "Product":[{"title":"Heat-shrink Tubing","list":["Single-Wall","Dual-Wall","Heavy-Duty","Fabric","Medical"]},
+    {"title":"Non-shrink Tubing","list":["onduit Tubing","Spiral Binding","PVC Tubing","Silicone Tubing","Neoprene Tubing","PTFE Tubing"]},
+    {"title":"Braided Sleeving","list":["Electrical","Mechanical","Thermal","EMI","Fire-resistant","Acoustic"]}]
+
+
+},
+{
+    "id":"#6",
+    "imageUrl":"assets/img/alexandre-debieve-561298-unsplash.jpg",
+    "caption":"Earthing Products",
+    "Product":[{"title":"Heat-shrink Tubing","list":["Single-Wall","Dual-Wall","Heavy-Duty","Fabric","Medical"]},
+    {"title":"Non-shrink Tubing","list":["onduit Tubing","Spiral Binding","PVC Tubing","Silicone Tubing","Neoprene Tubing","PTFE Tubing"]},
+    {"title":"Braided Sleeving","list":["Electrical","Mechanical","Thermal","EMI","Fire-resistant","Acoustic"]}]
+
+
+},
+{
+    "id":"#7",
+    "imageUrl":"assets/img/alexandre-debieve-561298-unsplash.jpg",
+    "caption":"Addtional Products",
+    "Product":[{"title":"Heat-shrink Tubing","list":["Single-Wall","Dual-Wall","Heavy-Duty","Fabric","Medical"]},
+    {"title":"Non-shrink Tubing","list":["onduit Tubing","Spiral Binding","PVC Tubing","Silicone Tubing","Neoprene Tubing","PTFE Tubing"]},
+    {"title":"Braided Sleeving","list":["Electrical","Mechanical","Thermal","EMI","Fire-resistant","Acoustic"]}]
+
+
+},
+{
+    "id":"#8",
+    "imageUrl":"assets/img/alexandre-debieve-561298-unsplash.jpg",
+    "caption":"Addtional Products",
+    "Product":[{"title":"Heat-shrink Tubing","list":["Single-Wall","Dual-Wall","Heavy-Duty","Fabric","Medical"]},
+    {"title":"Non-shrink Tubing","list":["onduit Tubing","Spiral Binding","PVC Tubing","Silicone Tubing","Neoprene Tubing","PTFE Tubing"]},
+    {"title":"Braided Sleeving","list":["Electrical","Mechanical","Thermal","EMI","Fire-resistant","Acoustic"]}]
+
+
+}
+]

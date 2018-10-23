@@ -1,0 +1,168 @@
+
+   
+        <!-- Card body -->
+    <div class="card-body">
+          
+            <!-- Default form subscription -->
+            
+                <p class="h4 text-center py-4">Product Enquiry</p>
+                <div class="container jumbotron">
+                <!--<div class="row form-header">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    Form1
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    Form2
+                                </div>
+                </div>-->
+                <div class="d-flex flex-row">
+                        <div class="p-2 tab" (click)="formindiupdate()"  [class.tab1]="tab1value"><strong>Form 1</strong></div>
+                        <div class="p-2"></div>
+                        <div class="p-2 tab" (click)="formindiupdate1()"  [class.tab1]="tab1value1"><strong>Form 2</strong></div>
+                </div>
+                <ng-template [ngIf]="formindicator" >
+                      <!-- Default input name -->
+                      <form #myform ngNativeValidate (submit)="upload()">
+                            <!-- Default input name -->
+                        
+                            <label class="grey-text font-weight-bold">Your Name:</label>
+                            <input type="text" #name name="name" id="name" class="form-control" required>
+                
+                            <br>
+                
+                            <!-- Default input email -->
+                            <label class="grey-text font-weight-bold">Your Email:</label>
+                            <input type="email"  id="email"  name="email" class="form-control" required>
+                            <br>
+                            <!-- Default mobile no email -->
+                            <label class="grey-text font-weight-bold">Mobile No:</label>
+                            <input type="text" name="phoneno" id="phoneno" class="form-control" required>
+                            <br>
+            
+                            <label class="grey-text font-weight-bold">Download Enquiry Form:</label>
+                            <br>
+                            <a href="../../assets/project enquiry.xlsx"><input type="button" class="btn btn-sm purple" value="Download"></a>
+                            <i class="fa fa-file-excel-o fa-2x" aria-hidden="true"></i>
+                                                                
+                            <br>
+                            <br>
+                            <label class="grey-text font-weight-bold">Upload Enquiry Form:</label>
+                            <br>
+                            
+                            <input type="file" name="file" id="file" #fileinput required style="margin-left:6px">
+                            
+                            
+                            <div class="text-center py-4 mt-3">
+                                <button class="btn btn-outline-purple" type="submit" [disabled]="isdisabled" >Send<i class="fa fa-paper-plane-o ml-2"></i></button><span *ngIf="isspinner"><img src="../../assets//img/spinner.gif"></span>
+                            </div>
+                            </form>  
+                
+            </ng-template>
+            <!-- Default form subscription -->
+            <ng-template [ngIf]="formindicator1">
+                  
+                    <form ngNativeValidate #myform2 (submit)="form2submit()" >
+                            <label  class="grey-text font-weight-bold">Customer Name:</label>
+                            <input type="text" id="customername" class="form-control" name="CustomerName" required>
+                
+                            <br>
+                            <label class="grey-text font-weight-bold">Project Name:</label>
+                            <input type="text" id="ProjectName" class="form-control" required>
+                
+                            <br>
+                            <label class="grey-text font-weight-bold">End Application:</label>
+                            <input type="text" id="endapplication" class="form-control" required>
+                
+                            <br>
+                            <label class="grey-text font-weight-bold">Date of Start Production:</label>
+                            <input type="Date" id="startdate"  class="form-control" required>
+                
+                            <br>
+                            <label class="grey-text font-weight-bold">Pilot Start Date:</label>
+                            <input type="Date" id="pilotstart" class="form-control" required>
+                
+                            <br>
+                            <label class="grey-text font-weight-bold">Quote Products:</label>
+                            <div class="form-row align-items-center">
+                                <!-- Grid column -->
+                                <div class="col-auto">
+                                    <!-- Default input -->
+                                    <label class="sr-only" >Part Number/descripition</label>
+                                    <input type="text" class="form-control mb-2" name="PartNumber" id="partno" placeholder="Part Number/descripition" required>
+                                </div>
+                                <!-- Grid column -->
+                                <div class="col-auto">
+                                    <!-- Default input -->
+                                    
+                                            <label class="sr-only" >Manufacture</label>
+                                            <select class="form-control mb-2" name="Manfacture" id="manfacture">
+                                                    <option [value]=null disabled class="text-grey font-weight-light">Manfacture</option>
+                                                    <option *ngFor="let M of Manufactures" value={{M.name}}>{{M.name}}</option>
+                                                    
+                                            
+                                            </select>
+                                    
+                                </div>
+                                <!-- Grid column -->
+                                <div class="col-auto">
+                                    <!-- Default input -->
+                                    <label class="sr-only" >Annual Quantity</label>
+                                    <input type="text" class="form-control mb-2"  id="annualquantity" placeholder="Annual Quantity" required>
+                                </div>
+                                <div class="col-auto">
+                                    <!-- Default input -->
+                                    <label class="sr-only" >Sample Quanity</label>
+                                    <input type="text" class="form-control mb-2" id="samplequantity" placeholder="Sample Quanity" required>
+                                </div>
+                              
+                                    
+                                
+                            </div>
+                            <button class="btn purple btn-md " type="button" (click)="addProduct()">Add</button>      
+                            <!-- Grid row -->
+                            
+                           <ng-template [ngIf]="producttable">
+                               
+                               <table class="table">
+                                   <tr>
+                                       <th>Select</th>
+                                       <th>Index</th>
+                                       <th>PartNumber</th>
+                                       <th>Manufacture</th>
+                                       <th>Annual Quanity</th>
+                                       <th>Sample Quanity</th>
+                                   </tr>
+                                   <tr *ngFor="let data of ProductList; let i = index">
+                                       <td><input type="checkbox"
+                                        name="{{data.PartNumber}}" 
+                                        value="{{i+1}}"
+                                        (change)="change($event, i)" >
+                                        
+                                     </td>
+                                       <td>{{i+1}}</td>
+                                       <td>{{data.PartNumber}}</td>
+                                       <td>{{data.Manfacture}}</td>
+                                       <td>{{data.AnnualQuantity}}</td>
+                                       <td>{{data.SampleQuantity}}</td>
+                                   </tr>
+                               </table>
+                               <button class="btn btn-danger btn-md" type="button" (click)="Deleteprod()">Delete</button>
+                           </ng-template>
+                           
+                            <div class="text-center py-4 mt-3">
+                                <button class="btn btn-outline-purple" type="submit" [disabled]="isdisabled" >Send<i class="fa fa-paper-plane-o ml-2"></i></button><span *ngIf="isspinner"><img src="../../assets//img/spinner.gif"></span>
+                            </div>
+                         
+                        </form>
+                            
+                    
+            </ng-template>
+            
+              </div>
+            
+            
+    
+        
+        <!-- Card body -->
+    
+    

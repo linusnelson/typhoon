@@ -1,0 +1,77 @@
+<!--Main Navigation-->
+
+<!--Main Layout-->
+<main class="text-center nav_banner">
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class=" col-sm-12 col-md-6">
+          <img src="../../assets/img/intro.gif" class="img-responsive">
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <h1 class="text-center deep-purple-text"><strong><span>Typhoon Electronics</span></strong></h1>
+        <p align="justify"><strong>Typhoon  supports both original equipment and contract manufacturers in all market segments of the electronics industry, stocking products from the industry's leading manufacturers in different component categories, with a particular focus on interconnect and elecromechanical products.</strong></p>
+        <p align="justify"><strong>Typhoon was built on the ideals of deep inventory, flexible policies, responsive systems, knowledgeable tecnical support and unsurpassed customer service.It is the philosophies that have made Typhoon the pre-eminent interconnect distributor in the world</strong></p>
+        <p align="justify"><strong>Typhoon can soure components from thir international sourcing group any hard to find, obsolete and allocated parts from any part of the world through their associate offices in Malaysia, Japan, Singapore, North America, UK, Germany and France within a very short time. Typhoon can maintain excess inventory and will help liquidate excess inventory for repeaedd regular orders. Typhoon can support by supplying components for R&D department, design, prototype development requirements.</strong></p>
+        <button type="button" class="btn btn-secondary btn-rounded1 waves-light" mdbWavesEffect>Know more</button>
+      </div>
+    </div>
+  </div>
+  <!--Main Layout-->
+  <!--<button type="button" class="btn waves-light btn1" (click)="form.show()" mdbWavesEffect>
+      <i class="fa fa-envelope fa-lg" aria-hidden="true"></i></button>-->
+      <i class="fa fa-envelope fa-3x sticky" (click)="form.show()"></i>
+  
+   
+      
+      <!--Modal: Contact form-->
+      <div mdbModal #form="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog cascading-modal" role="document">
+          <!--Content-->
+          <div class="modal-content">
+      
+            <!--Header--> 
+            <div class="modal-header purple  white-text">
+              <h4 class="title">Write to us</h4>
+              <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close" (click)="form.hide()">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body mb-0">
+              <form [formGroup]="writeToUs" (submit)="formSubmit(writeToUs.value)">
+                <div class="md-form form-sm">
+                  <i class="fa fa-envelope prefix"></i>
+                  <input  placeholder="Name" type="text" id="modalFormNameEx" formControlName="name" class="form-control">
+                
+                </div>
+      
+                <div class="md-form form-sm">
+                  <i class="fa fa-lock prefix"></i>
+                  <input placeholder="Email" type="email" id="modalFormEmailEx" formControlName="email" class="form-control">
+               
+                </div>
+      
+                <div class="md-form form-sm">
+                  <i class="fa fa-pencil prefix"></i>
+                  <textarea placeholder="Message" type="text" id="modalFormTextEx" formControlName="message" class="md-textarea mb-0"></textarea>
+               
+                </div>
+      
+                <div class="text-center mt-1-half">
+                  <button type="submit" class="btn  mb-2 waves-light purple" mdbWavesEffect (click)="form.hide()" [disabled]="!writeToUs.valid">Send
+                    <i class="fa fa-send ml-1"></i>
+                  </button>
+                </div>
+              </form>
+      
+            </div>
+          </div>
+          <!--/.Content-->
+        </div>
+      </div>
+  
+  </main>
+  
+  

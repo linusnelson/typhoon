@@ -1,0 +1,51 @@
+<header class="h-100">
+  <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar intro-fixed-nav" [containerInside]="false">
+      <logo class="logo">
+          <a class="logo" routerLink="/Home">
+              <img src="../../assets/img/logo.png" />
+          </a>
+      </logo>
+      <links>
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item waves-dark" mdbWavesEffect >
+                  <a class="nav-link" routerLink="/Home">
+                      <strong class="typhoonPurple" >Home</strong>
+                      <span class="sr-only">(current)</span>
+                  </a>
+              </li>
+              <li class="nav-item waves-dark" mdbWavesEffect >
+                  <a  class="nav-link" routerLink="/Products">
+                      <strong class="typhoonPurple">Products</strong>
+                  </a>
+              </li>
+              <li class="nav-item waves-dark" mdbWavesEffect>
+                  <a class="nav-link" routerLink="/AboutUs">
+                      <strong class="typhoonPurple">About Us</strong>
+                  </a>
+              </li>
+          </ul>
+          <ul class="navbar-nav nav-flex-icons">
+              <li class="nav-item waves-dark" mdbWavesEffect>
+                  <a class="nav-link">
+                      <i class="fa fa-facebook typhoonPurple" mdbTooltip="Facebook" placement="bottom"></i>
+                  </a>
+              </li>
+              <li class="nav-item waves-dark" mdbWavesEffect>
+                  <a class="nav-link">
+                      <i class="fa fa-twitter typhoonPurple" mdbTooltip="Twitter" placement="bottom"></i>
+                  </a>
+              </li>
+              <li class="nav-item waves-dark" mdbWavesEffect>
+                  <a class="nav-link">
+                      <i class="fa fa-instagram typhoonPurple" mdbTooltip="Instagram" placement="bottom"></i>
+                  </a>
+              </li>
+              <li class="nav-item waves-dark" mdbWavesEffect>
+                  <a class="nav-link">
+                      <i class="fa fa-envelope typhoonPurple" mdbTooltip="E-Mail" placement="bottom"></i>
+                  </a>
+              </li>
+          </ul>
+      </links>
+  </mdb-navbar>
+</header>

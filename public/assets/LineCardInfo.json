@@ -1,0 +1,270 @@
+[
+   
+    
+    {
+        "name" : "TDK",
+        "imageUrl": "assets/Line Cards/34.png"
+    },
+    {
+        "name" : "APEM",
+        "imageUrl": "assets/Line Cards/2.png"
+    },
+    {
+        "name" : "NXP",
+        "imageUrl": "assets/Line Cards/16.png"
+    },
+    {
+        "name" : "CINCH",
+        "imageUrl": "assets/Line Cards/44.png"
+    },
+    {
+        "name" : "ESTERLINE",
+        "imageUrl": "assets/Line Cards/47.png"
+    },
+    {
+        "name" : "TYCO ELECTRONICS",
+        "imageUrl": "assets/Line Cards/37.png"
+    },
+    {
+        "name" : "TEXAS INSTRUMENTS",
+        "imageUrl": "assets/Line Cards/20.png"
+    },
+    {
+        "name" : "PANASONIC",
+        "imageUrl": "assets/Line Cards/24.png"
+    },
+    {
+        "name" : "KEMET",
+        "imageUrl": "assets/Line Cards/12.png"
+    },
+   
+    {
+        "name" : "COMPUTAR",
+        "imageUrl": "assets/Line Cards/7.png"
+    },
+    {
+        "name" : "CYPRESS",
+        "imageUrl": "assets/Line Cards/8.png"
+    },
+    {
+        "name" : "FAIRCHILD SEMICONDUCTOR",
+        "imageUrl": "assets/Line Cards/9.png"
+    },
+    {
+        "name" : "FREESCALE",
+        "imageUrl": "assets/Line Cards/10.png"
+    },
+    {
+        "name" : "INTERSIL",
+        "imageUrl": "assets/Line Cards/11.png"
+    },
+   
+    {
+        "name" : "MICREL",
+        "imageUrl": "assets/Line Cards/13.png"
+    },
+    {
+        "name" : "MICROCHIP",
+        "imageUrl": "assets/Line Cards/14.png"
+    },
+    {
+        "name" : "MITSUBISHI ELECTRIC",
+        "imageUrl": "assets/Line Cards/15.png"
+    },
+    {
+        "name" : "ANALOG DEVICES",
+        "imageUrl": "assets/Line Cards/1.png"
+    },
+    
+    {
+        "name" : "POWER INTEGRATIONS",
+        "imageUrl": "assets/Line Cards/17.png"
+    },
+    {
+        "name" : "RENESAS",
+        "imageUrl": "assets/Line Cards/18.png"
+    },
+    {
+        "name" : "SONY",
+        "imageUrl": "assets/Line Cards/33.png"
+    },
+    {
+        "name" : "ST",
+        "imageUrl": "assets/Line Cards/19.png"
+    },
+    {
+        "name" : "SAMSUNG",
+        "imageUrl": "assets/Line Cards/30.png"
+    },
+    
+    {
+        "name" : "VISHAY",
+        "imageUrl": "assets/Line Cards/21.png"
+    },
+    {
+        "name" : "SAMWHA",
+        "imageUrl": "assets/Line Cards/61.png"
+    },
+    {
+        "name" : "AVX",
+        "imageUrl": "assets/Line Cards/5.png"
+    },
+    {
+        "name" : "BOURNS",
+        "imageUrl": "assets/Line Cards/6.png"
+    },
+    {
+        "name" : "ON SEMICONDUCTOR",
+        "imageUrl": "assets/Line Cards/23.png"
+    },
+    
+    {
+        "name" : "POLAMCO",
+        "imageUrl": "assets/Line Cards/25.png"
+    },
+    {
+        "name" : "ATMEL",
+        "imageUrl": "assets/Line Cards/3.png"
+    },
+    {
+        "name" : "AVAGO",
+        "imageUrl": "assets/Line Cards/4.png"
+    },
+    {
+        "name" : "POSITRONIC",
+        "imageUrl": "assets/Line Cards/26.png"
+    },
+    {
+        "name" : "RECOM",
+        "imageUrl": "assets/Line Cards/27.png"
+    },
+    {
+        "name" : "LINEAR TECHNOLOGY",
+        "imageUrl": "assets/Line Cards/62.png"
+    },
+    {
+        "name" : "ROHM",
+        "imageUrl": "assets/Line Cards/29.png"
+    },
+   
+    {
+        "name" : "SAMTEC",
+        "imageUrl": "assets/Line Cards/31.png"
+    },
+    {
+        "name" : "SILICON LABS",
+        "imageUrl": "assets/Line Cards/32.png"
+    },
+    
+    {
+        "name" : "THOMAS & BETTS",
+        "imageUrl": "assets/Line Cards/35.png"
+    },
+    {
+        "name" : "TOSHIBA",
+        "imageUrl": "assets/Line Cards/36.png"
+    },
+   
+    {
+        "name" : "WATEC",
+        "imageUrl": "assets/Line Cards/38.png"
+    },
+    {
+        "name" : "WINCHESTER",
+        "imageUrl": "assets/Line Cards/39.png"
+    },
+    {
+        "name" : "YAGEO",
+        "imageUrl": "assets/Line Cards/40.png"
+    },
+    {
+        "name" : "ADI ELECTRONICS",
+        "imageUrl": "assets/Line Cards/41.png"
+    },
+    {
+        "name" : "AERO-ELECTRIC CONNECTOR",
+        "imageUrl": "assets/Line Cards/42.png"
+    },
+    {
+        "name" : "AMPHENOL",
+        "imageUrl": "assets/Line Cards/43.png"
+    },
+  
+    {
+        "name" : "DEUTSCH",
+        "imageUrl": "assets/Line Cards/45.png"
+    },
+    {
+        "name" : "DIALIGHT",
+        "imageUrl": "assets/Line Cards/46.png"
+    },
+   
+    {
+        "name" : "EVERLIGHT",
+        "imageUrl": "assets/Line Cards/48.png"
+    },
+    {
+        "name" : "FCI",
+        "imageUrl": "assets/Line Cards/49.png"
+    },
+    {
+        "name" : "FRONTIER ELECTRONICS",
+        "imageUrl": "assets/Line Cards/50.png"
+    },
+    {
+        "name" : "FUJITSU",
+        "imageUrl": "assets/Line Cards/51.png"
+    },
+    {
+        "name" : "GLENAIR",
+        "imageUrl": "assets/Line Cards/52.png"
+    },
+    {
+        "name" : "HALO",
+        "imageUrl": "assets/Line Cards/53.png"
+    },
+    {
+        "name" : "HARTING",
+        "imageUrl": "assets/Line Cards/54.png"
+    },
+    {
+        "name" : "HONEYWELL",
+        "imageUrl": "assets/Line Cards/55.png"
+    },
+    {
+        "name" : "HONGFA",
+        "imageUrl": "assets/Line Cards/56.png"
+    },
+    {
+        "name" : "HELLERMANN TYTON",
+        "imageUrl": "assets/Line Cards/57.png"
+    },
+    {
+        "name" : "IDEC",
+        "imageUrl": "assets/Line Cards/58.png"
+    },
+    {
+        "name" : "INFINEON",
+        "imageUrl": "assets/Line Cards/59.png"
+    },
+    {
+        "name" : "IOR",
+        "imageUrl": "assets/Line Cards/60.png"
+    },
+    {
+        "name" : "LITTLEFUSE",
+        "imageUrl": "assets/Line Cards/63.png"
+    },
+    {
+        "name" : "MURATA",
+        "imageUrl": "assets/Line Cards/64.png"
+    },
+    {
+        "name" : "NICHICON",
+        "imageUrl": "assets/Line Cards/65.png"
+    },
+    {
+        "name" : "OMRON",
+        "imageUrl": "assets/Line Cards/66.png"
+    }
+]

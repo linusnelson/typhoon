@@ -1,0 +1,33 @@
+
+p{
+    color: gray;
+    font-size: 15px;
+  
+}
+span{
+    color: gray;
+}
+.nav_banner{
+    margin-top: 150px;
+    padding: 20px;
+}
+img{
+     width: 300px;
+}
+.btn{
+    border-radius: 30px !important;
+    
+}
+
+i{
+    color: purple;
+    cursor: pointer;
+    position: fixed;
+    top: 53%;
+    right: 1%;
+   -webkit-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1;
+   
+}

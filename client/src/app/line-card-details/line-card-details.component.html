@@ -1,0 +1,26 @@
+
+<div class="container">
+  <div class="row"><br><br><br><br></div>
+  <p class="h4 text-center">Line Cards</p>
+  <div class="row">
+    <div class="col-md-3 col-sm-3 col-xs-3 row-sep" *ngFor="let card of lineCards">
+      <!--Card-->
+      <div class="card view zoom">
+        <!--Card image-->
+        <div class="hm-white-slight waves-light wow slideInUp" mdbWavesEffect align="center">
+          <img src="{{ card.imageUrl }}" class="img-fluid img-small" alt="Line Card">
+          <a>
+            <div class="mask"></div>
+          </a>
+        </div>
+        <!--Card content-->
+       <!-- <div class="card-body">
+          <!--Title
+          <h4 class="card-title" align="center">{{ card.name }}</h4>
+        </div>-->
+        <!--/.Card-->
+      </div>
+    </div>
+  </div>
+</div>
+

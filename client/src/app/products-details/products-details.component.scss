@@ -1,0 +1,85 @@
+
+
+.row-sep { 
+  margin-top:15px;
+  margin-bottom:15px; 
+}
+
+
+.icon-ani{
+  position: relative;
+  -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 2s infinite;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {top: 0px;}
+  to {top: 20px;}
+}
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 20px;}
+}
+
+.search-section{
+  height: 20vh;
+  width: 100%;
+  position: relative;
+}
+.search-section-min{
+  height: 20vh;
+  width: 100%;
+  position: relative;
+}
+.formblock{
+  top:40%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+.formblock-min{
+    top:40%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+  
+}
+
+.row-sep{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul > li{
+  padding: 0;
+  margin: 0;
+  top:0;
+ 
+}
+
+
+.active-purple-2 input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid purple;
+  box-shadow: 0 1px 0 0 #ce93d8;
+}
+
+.active-purple-2 .fa {
+  color: purple;
+}
+
+

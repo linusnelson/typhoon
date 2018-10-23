@@ -1,0 +1,120 @@
+
+
+
+ <div [class.search-section]="normalpostion" [class.search-section-min]="toppostion">
+  <!-- Search form -->
+ <!-- Search form -->
+<form class="form-inline md-form form-sm active-purple-2 " [class.formblock]="normalpostion" [class.formblock-min]="toppostion">
+  <input class="form-control w-100" [(ngModel)]="searchText" (keyup)="transitionfun()" name="searchText" (keyup)="searchproduct()" type="text"  placeholder="  Search Product" aria-label="Search" >
+ <!-- <i class="fa fa-search" aria-hidden="true"></i>-->
+</form>
+
+
+
+</div>
+ 
+<div class="container text-center grey-text font-weight-bold"  style="top:15%;position: relative; min-height: 70vh;" *ngIf="notfound && searchFlag">No Matching Product</div>
+<div class="container text-center grey-text font-weight-normal display-result" style="top:15%;position: relative; min-height: 70vh" *ngIf="found && searchFlag">
+    
+        <!-- Card -->
+         <div class="row">
+            <div class="col-md-2 col-sm-3 col-xs-3 row-sep" *ngFor="let c of resultproducts">
+            {{c}}
+            </div>
+          </div>
+
+</div>
+
+<!--  <div class="text-center" id="downmarker">
+    <i class="fa fa-chevron-down fa-3x icon-ani" style="color:purple" aria-hidden="true"></i>
+  </div>-->
+
+  <div class="container-fluid" *ngIf="productFlag">
+    <p class="h4 text-center py-4 p1">Our Products</p>
+    <div class="container">
+      <!-- Card -->
+       <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-3 row-sep" *ngFor="let card of productCard;let i = index">
+              <!--Card-->
+              <div class="card view zoom">
+                <!--Card image-->
+                <div class="hm-white-slight waves-light wow slideInUp" mdbWavesEffect align="center">
+                  <img src="{{ card.imageUrl }}" class="img-fluid img-small" alt="Line Card">
+                  <a>
+                    <div class="mask"></div>
+                  </a>
+                </div>
+                <!--Card content-->
+               <div class="card-body text-center">
+                  <!--Title-->
+                  <h6 class="card-title grey-text font-weight-bold" align="center">{{ card.caption }}</h6>
+                  <button type="button" class="btn btn-info btn-sm" data-toggle="modal" [attr.data-target]="card.id">More</button>
+                  
+                </div>
+                <!--/.Card-->
+              </div>
+              <div id={{i+1}} class="modal fade" role="dialog">
+              <div class="modal-dialog modal-lg " >
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h5 class="modal-title grey-text font-weight-bold">{{ card.caption }}</h5>
+                  </div>
+                  <div class="modal-body">
+                      <div class="container">
+                        <!-- Card -->
+                         <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4 row-sep" *ngFor="let products of card.Product">
+                                <h6 class="grey-text font-weight-bold">{{products.title}}</h6>
+                                <ul>
+                                  <li class="grey-text font-weight-normal" *ngFor="let prodlist of products.list">{{prodlist}}</li>
+                                </ul>
+                                  <!--/.Card-->
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+         <!--<div class="col-md-3">
+
+            <!--<div class="card view zoom">
+              <!--Card image-
+              <div class="hm-white-slight waves-light wow slideInUp" mdbWavesEffect align="center">
+                <img src="../../assets/img/alexandre-debieve-561298-unsplash.jpg" class="img-fluid img-small" alt="Line Card">
+                <a>
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <!--Card content-
+             <div class="card-body">
+               
+                <h5 class="card-title grey-text font-weight-bold" align="center">Wire and Cables</h5>
+              </div>
+              <!--/.Card-
+            
+         </div>
+         <div class="col-md-3">
+
+         </div>
+         <div class="col-md-3">
+
+         </div>-->
+
+       </div>
+    </div>
+  </div>
+  
+
+<!-- Modal -->
+
+

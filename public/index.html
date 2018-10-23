@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="en"><head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Typhoon Electronics</title>
+</head>
+
+<body>
+  <app-root>
+    <style>
+      :root {
+        --loader-dimension: 80px;
+        --loader-border-width: 6px;
+      }
+
+      body {
+        background: white;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+      }
+
+      .main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .loading,
+      .loading:before,
+      .loading:after {
+        background: transparent;
+        border-radius: 50%;
+        border-style: solid;
+        border-color: transparent;
+        border-top-color: purple;
+        border-width: var(--loader-border-width);
+
+        animation-name: loader-ring;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-duration: 4s;
+      }
+
+      .loading {
+        width: var(--loader-dimension);
+        height: var(--loader-dimension);
+        position: relative;
+      }
+
+      .loading:before {
+        content: '';
+        width: calc(var(--loader-dimension) - var(--loader-border-width) * 2);
+        height: calc(var(--loader-dimension) - var(--loader-border-width) * 2);
+        position: absolute;
+        margin: 0px;
+        animation-duration: 3s;
+      }
+
+      .loading:after {
+        content: '';
+        width: calc(var(--loader-dimension) - var(--loader-border-width) * 4);
+        height: calc(var(--loader-dimension) - var(--loader-border-width) * 4);
+        position: absolute;
+        margin: 6px;
+        animation-duration: 2s;
+      }
+
+      @keyframes loader-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <div class="main">
+      <div class="loading"></div>
+    </div>
+  </app-root>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+
+<script type="text/javascript" src="runtime.js"></script><script type="text/javascript" src="polyfills.js"></script><script type="text/javascript" src="styles.js"></script><script type="text/javascript" src="scripts.js"></script><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="main.js"></script></body></html>
