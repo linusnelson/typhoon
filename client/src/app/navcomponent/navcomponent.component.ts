@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { HostListener, Inject } from "@angular/core";
+import { Component, OnInit, HostListener } from '@angular/core';
 
 
 @Component({
@@ -13,5 +12,4 @@ export class NavcomponentComponent implements OnInit {
 
   ngOnInit() {
   }
-  
 }

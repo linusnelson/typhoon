@@ -6,12 +6,12 @@ import { LineCard } from './LineCard';
   providedIn: 'root'
 })
 export class LineCardDataService {
- 
-  private url = "../assets/LineCardInfo.json";
+
+  private url = '../assets/LineCardInfo.json';
 
   constructor(private http: HttpClient) { }
 
-  getLineCardDetails(){
+  getLineCardDetails() {
     return this.http.get<LineCard[]>(this.url);
   }
 

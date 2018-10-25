@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
 
 p{
     color: gray;
@@ -30,4 +31,7 @@ i{
     transform: translateY(-50%);
     z-index: 1;
    
+}
+.brand-name{
+    font-family: 'Orbitron', sans-serif;
 }

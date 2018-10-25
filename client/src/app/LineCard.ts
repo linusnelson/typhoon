@@ -1,4 +1,4 @@
-export interface LineCard{
-    name: String,
-    imageUrl: String
+export interface LineCard {
+    name: string ;
+    imageUrl: string ;
 }

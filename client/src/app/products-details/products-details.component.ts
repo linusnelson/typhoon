@@ -11,16 +11,16 @@ import {FilterPipe} from '../filter.pipe';
   providers: [ FilterPipe ]
 })
 export class ProductsDetailsComponent implements OnInit {
-  productCard=[];
-  allproducts=[];
-  resultproducts=[];
-  searchText:string;
-  searchFlag=false;
-  productFlag=true;
-  notfound:boolean = false;
+  productCard = [];
+  allproducts = [];
+  resultproducts = [];
+  searchText: string;
+  searchFlag = false;
+  productFlag = true;
+  notfound: boolean = false;
   normalpostion: boolean = true;
   toppostion: boolean = false;
-  found:boolean=false;
+  found: boolean = false;
   constructor(private productCardService: ProductCardService, private filter : FilterPipe) { }
 
   ngOnInit() {
@@ -54,25 +54,25 @@ export class ProductsDetailsComponent implements OnInit {
       this.searchFlag=false;
     }
    
-    //this.found=false;
+    // this.found=false;
     this.resultproducts=this.filter.transform(this.allproducts,this.searchText);
     console.log(this.resultproducts);
     console.log(this.searchText.length > 4);
     console.log(this.resultproducts.length == 0);
-   
+
       this.found=true;
       if(this.searchText.length >= 1 && this.resultproducts.length == 0){
       console.log('inside the notfound');
       this.notfound = true;
       this.found = false;
     }
-    
+
   }
   transitionfun(){
     this.normalpostion=false;
     this.toppostion=true;
   }
-  
+
  }
 
 
